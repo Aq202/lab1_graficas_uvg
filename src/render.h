@@ -27,10 +27,9 @@ void render()
 
   drawPolygon(points);
 
-
   /*Poligono 2*/
   points.clear();
-  
+
   points.push_back(Vertex2{321, 335});
   points.push_back(Vertex2{288, 286});
   points.push_back(Vertex2{339, 251});
@@ -44,6 +43,17 @@ void render()
 
   drawPolygon(points);
 
+  /*Poligono 3*/
+  points.clear();
+
+  points.push_back(Vertex2{377, 249});
+  points.push_back(Vertex2{411, 197});
+  points.push_back(Vertex2{436, 249});
+
+  setCurrentColor({255, 0, 0});
+  fillPolygon(points);
+  setCurrentColor({255, 255, 255});
+  drawPolygon(points);
 
   renderBuffer();
 }
