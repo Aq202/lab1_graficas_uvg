@@ -95,5 +95,9 @@ void render()
 
   fillPolygon(points2);
 
+  setCurrentColor({255, 255, 255});
+
+  drawPolygon(points2);
+
   renderBuffer();
 }
